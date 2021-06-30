@@ -24,7 +24,8 @@ import { environment } from '../environments/environment';
     NbThemeModule.forRoot({ name: 'dark' }),
     NbLayoutModule,
     NbEvaIconsModule, 
-    NbButtonModule, ServiceWorkerModule.register('ngsw-worker.js', {
+    NbButtonModule, 
+    ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
