@@ -59,4 +59,8 @@ export class BoardComponent implements OnInit {
     return null;
   }
 
+  get allSquareSelected() {
+    return this.squares.every(square => !!square);
+  }
+
 }
